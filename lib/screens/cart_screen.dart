@@ -24,8 +24,8 @@ class CartScreen extends StatelessWidget {
         itemBuilder: (BuildContext context, index) {
           final cart = snapshot.data;
           return ListTile(
-            title: Text(cart[index].product),
-            subtitle: Text(cart[index].price.toString()),
+            title: Text(cart[index].product.toString()),
+            subtitle: Text(cart[index].quantity.toString()),
             trailing: IconButton(
               icon: Icon(Icons.remove_shopping_cart),
               onPressed: () {
